@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+
+<body>
+ 
+    <div class="container">
+        <ul class="nav nav-tabs my-4" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="bt1-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Bài Tập 1</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="bt2-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Bài Tập 2</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="bt3-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Bài Tập 3</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="bt4-tab" data-bs-toggle="tab" data-bs-target="#bt4-tab-pane" type="button" role="tab" aria-controls="bt4-tab-pane" aria-selected="false">Bài Tập 4</button>
+            </li>
+            
+            
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="bt1-tab" tabindex="0">
+                <h2 class="mt-3 d-block">Bài tập 1: Tính kết quả đậu và rớt của thí sinh</h2>
+                <div class="row">
+                    <div class="col-4  d-inline-block ">
+                        <label for="" class="form-label">Nhập điểm chuẩn</label>
+                        <input type="text"
+                          class="form-control pb-2 " name="" id="diemChuan" aria-describedby="helpId" placeholder="">
+                      </div>
+                      <div class=" col-4 mb-3 d-inline-block">
+                          <label for="" class="form-label">Chọn khu vực ưu tiên</label>
+                          <select class="form-select form-select-lg " style="font-size: 1rem;" name="" id="khuVucUuTien">
+                              <option selected>Khu vực ưu tiên</option>
+                              <option value="2">A</option>
+                              <option value="1">B</option>
+                              <option value="0.5">C</option>
+                              <option value="0">X</option>
+                          </select>
+                      </div>
+                      <div class="col-4 mb-3 d-inline-block">
+                          <label for="" class="form-label">Chọn đối tượng ưu tiên</label>
+                          <select class="form-select form-select-lg" style="font-size: 1rem;" name="" id="doiTuongUuTien">
+                              <option selected>Đối tượng ưu tiên</option>
+                              <option value="2.5">1</option>
+                              <option value="1.5">2</option>
+                              <option value="1">3</option>
+                              <option value="0">0</option>
+                          </select>
+                      </div>
+                      <div class="col-4 mt-2 d-inline-block">
+                          <label for="" class="form-label">Nhập điểm môn 1</label>
+                          <input type="text"
+                            class="form-control " name="" id="mon1" aria-describedby="helpId" placeholder="">
+                      </div>
+                      <div class="col-4 mt-2 d-inline-block">
+                          <label for="" class="form-label">Nhập điểm môn 2</label>
+                          <input type="text"
+                            class="form-control " name="" id="mon2" aria-describedby="helpId" placeholder="">
+                      </div>
+                      <div class="col-4 mt-2 d-inline-block">
+                          <label for="" class="form-label">Nhập điểm môn 3</label>
+                          <input type="text"
+                            class="form-control " name="" id="mon3" aria-describedby="helpId" placeholder="">
+                      </div>
+                </div>
+                
+                <button class="btn btn-primary text-white bg-opacity-75 my-2 d-block" id="tinhKetQua">Kết quả</button>
+                <div class="text-white bg-black py-3" id="showKetQua"></div>
+            </div>
+            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="bt2-tab" tabindex="0">
+                <h2 class="mt-3">Bài Tập 2: Tính tiền điện</h2>
+                <div class="mb-3">
+                  <label for="" class="form-label">Nhập tên</label>
+                  <input type="text"
+                    class="form-control p-2 mt-3 w-25" name="" id="" aria-describedby="helpId" placeholder="">
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label">Nhập số điện</label>
+                    <input type="text"
+                      class="form-control p-2 mt-3 w-25" name="" id="soDien" aria-describedby="helpId" placeholder="">
+                  </div>
+                <button class="btn btn-primary text-white bg-opacity-75 my-2" id="tinhTienDien">Tính</button>
+                <div class="text-white bg-black py-3" id="tienDien"></div>
+            </div>
+            <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="bt3-tab" tabindex="0">
+                <h2>Bài Tập 3: Tính tiền thu nhập</h2>
+                <div class="mb-3">
+                  <label for="" class="form-label">Nhập họ và tên</label>
+                  <input type="text"
+                    class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label">Nhập tổng thu nhập năm</label>
+                    <input type="text"
+                      class="form-control" name="" id="tongThuNhap" aria-describedby="helpId" placeholder="">
+                  </div>
+                  <div class="mb-3">
+                    <label for="" class="form-label">Nhập số người phụ thuộc</label>
+                    <input type="text"
+                      class="form-control" name="" id="soNguoi" aria-describedby="helpId" placeholder="">
+                  </div>
+                <button class="btn btn-primary text-white bg-opacity-75 my-2" id="tinhThuNhap">Tính</button>
+                <div class="text-white bg-black py-3" id="showThuNhapThue"></div>
+            </div>
+            <div class="tab-pane fade" id="bt4-tab-pane" role="tabpanel" aria-labelledby="bt4-tab" tabindex="0">
+                <h2>Bài Tập 4: Tính tiền cáp</h2>
+                <div class="mb-3">
+                  <label for="" class="form-label">Nhập Mã Khách Hàng</label>
+                  <input type="text"
+                    class="form-control" name="" id="maKH" aria-describedby="helpId" placeholder="">
+                </div>
+                <div class="mb-3">
+                  <label for="" class="form-label">Chọn Loại Khách Hàng</label>
+                  <select class="form-select form-select-lg" name="" id="loaiKH">
+                    <option selected>Loại Khách Hàng</option>
+                    <option value="ND">Nhà Dân</option>
+                    <option value="DN">Doanh Nghiệp</option>
+                  </select>
+                </div>
+                <div class=" mb-3" id="soKN" style="display: none;">
+                  <label for="" class="form-label">Nhập Số Kết Nối</label>
+                  <input type="text"
+                    class="form-control"  name="" id="soKetNoi" aria-describedby="helpId" placeholder="">
+                </div>
+                <div class="mb-3">
+                  <label for="" class="form-label">Nhập Số Kênh Cao Cấp</label>
+                  <input type="text"
+                    class="form-control" name="" id="soKenhCaoCap" aria-describedby="helpId" placeholder="">
+                </div>
+                <button class="btn btn-primary text-white bg-opacity-75 my-2" id="tinhTienCap">Tính</button>
+                <div class="text-white bg-black py-3" id="hoaDon"></div>
+            </div>
+            
+          </div>
+    </div>
+
+
+
+
+
+
+
+
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+  <script src="./index.js"></script>
+</body>
+
+</html>
